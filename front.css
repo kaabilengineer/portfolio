@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #16141a;
+}
+
+.header {
+    position: relative;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(109,0,251);
+    background: linear-gradient(90deg, rgba(109,0,251,1) 0%, rgba(57,185,158,1) 0%, rgba(9,121,110,1) 20%, rgba(3,50,25,1) 60%, rgba(2,0,36,1) 100%);
+    margin: 10px;
+}
+
+.profile {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-picture {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    transform: rotate(90deg);
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.atharva, .kaabil {
+    font-family: 'Inter', sans-serif;
+    color: white; 
+}
+
+.atharva {
+    margin-bottom: 0;
+}
+
+.kaabil {
+    margin-top: -3px;
+}
+
+.follow-button {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjusted right margin */
+    transform: translateY(-50%);
+    max-width: 400px; /* Adjusted max-width */
+}
+
+.instagram-button,
+.contact-button {
+    display: inline-block; /* or display: inline; */
+
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add margin between buttons */
+   
+}
+
+.instagram-button {
+    padding: 8px 12px; /* Adjusted padding for a smaller button */
+    background: linear-gradient(to right, #405DE6, #5851DB, #833AB4);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none; /* Corrected property name from 'solid' to 'none' */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.instagram-button:hover {
+    background: linear-gradient(to right, #833AB4, #5851DB, #405DE6);
+    color: black;
+  
+ 
+}
+
+.contact-button {
+    margin-top: 10px;
+    background-color: rgba(57,185,158,1);
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Additional styling for the form overlay */
+#contact-form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects-container {
+    margin: 10px; 
+    display: flex;
+    flex-wrap: wrap; 
+    
+    
+    
+}
+
+.projects-container2 {
+    margin: 10px; 
+    display: flex;
+    flex-wrap: wrap; 
+    
+    
+    
+}
+
+.project-card {
+    cursor: pointer;
+  
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px; 
+    height: 250px;
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    background-color: rgb(20, 24, 32);
+    color: rgb(155, 155, 155);
+}
+
+.project{
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(212, 212, 212); 
+    margin-left: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.project-card2 {
+    cursor: pointer;
+  
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px; 
+    height: 220px;
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    background-color: rgb(20, 24, 32);
+    color: rgb(155, 155, 155);
+}
+.title2 {
+    color: rgb(155, 155, 155);
+    font-weight: bold;
+    font-size:medium;
+    font-family: 'Inter', sans-serif;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+
+.project-card2 img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px white;
+    background-color: #16141a;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-family: 'Inter', sans-serif; /* Use the Inter font or your preferred font */
+    margin: 5px; 
+    font-size: smaller;
+}
+
+.social-container img {
+    margin-right: 3px;
+}
+
+.social-container {
+    
+    border-radius: 15px;
+    background-color: #f2f2f2; /* Set your desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    /* background: rgb(109,0,251);
+background: linear-gradient(90deg, rgba(109,0,251,1) 0%, rgba(57,185,158,1) 0%, rgba(37,101,119,1) 28%,
+ rgba(27,72,98,1) 43%, rgba(89,88,97,1) 70%, rgba(9,121,110,1) 100%, rgba(3,50,25,1) 100%, rgba(2,0,36,1) 100%); */
+ 
+    background: rgb(20, 24, 32);
+    margin: 10px;
+  }
+
+  .social-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .button {
+    padding: 10px;
+    background: linear-gradient(to right, #405DE6, #5851DB, #833AB4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background: linear-gradient(to right, #833AB4, #5851DB, #405DE6);
+    color: black;
+  
+ 
+}
+
+  .icon {
+    font-size: 24px; /* Set your desired icon size */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  .skillset{
+    flex-wrap: wrap; 
+    
+    display: flex;
+  }
+  .container2 {
+    width: 250px;
+    height: 200px;
+    background-color: rgb(20, 24, 32);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    
+
+    padding: 20px 10px; /* Adjusted padding for better spacing */
+    margin: 10px;
+}
+
+.title {
+    color: rgb(155, 155, 155);
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Inter', sans-serif;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.tags-container {
+   
+    display: flex;
+    flex-wrap: wrap; /* Allow tags to wrap to the next line if needed */
+    margin-top: 20px;
+
+}
+
+.box {
+    min-width: 30px;
+    height: 30px;
+    background-color: rgb(26, 31, 41);
+    margin: 5px 5px 5px 5px; /* Adjusted margin for better spacing */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    padding-left: 4px;
+    color: rgb(155, 155, 155);
+    padding-right: 4px;
+}
+
+.box2 {
+    min-width: 30px;
+    height: 30px;
+    background-color: rgb(26, 31, 41);
+    margin: 5px 5px 5px 5px; /* Adjusted margin for better spacing */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    padding-left: 4px;
+    color: rgb(155, 155, 155);
+    padding-right: 4px;
+    border: 1px solid #833AB4 ;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 24, 32);
+    border-radius: 2px;
+}
+  
+  /* For Firefox */
+  * {
+    scrollbar-color: rgb(20, 24, 32);
+    border-radius: 2px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 24, 32);
+    border-radius: 2px;
+  }
+  
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 120px;
+    }
+
+    .profile {
+        left: 10px;
+    }
+
+    .profile-picture{
+        margin-right: 4px;
+    }
+
+    .atharva{
+        font-size: 20px;
+    }
+    .kaabil{
+        font-size: 10px;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .follow-button {
+        right: 10px;
+        max-width: 180px;
+        font-size: 10px;
+    }
+
+    .project-card{
+        width: 100%;
+        margin: 10px;
+        height: fit-content;
+    }
+    .project-card img {
+        width: 100%;
+        height: 60%;
+       
+        
+    }
+
+    .project-card2{
+        width: 100%;
+        margin: 10px;
+        height: 250px;
+    }
+    
+
+    .container2{
+        width: 100%;
+        height: fit-content;
+        
+    }
+}
