@@ -398,9 +398,9 @@ background: linear-gradient(90deg, rgba(109,0,251,1) 0%, rgba(57,185,158,1) 0%, 
     }
 
     .project-card2{
-        width: 40%;
+        width: 100%;
         margin: 10px;
-        height: 120px;
+        height: 250px;
         
     }
     
@@ -411,8 +411,5 @@ background: linear-gradient(90deg, rgba(109,0,251,1) 0%, rgba(57,185,158,1) 0%, 
         align-items: center;
     }
 
-    .title2{
-        font-size:x-small;
-        margin-top: -1px;
-    }
+    
 }
