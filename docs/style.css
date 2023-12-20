@@ -398,15 +398,21 @@ background: linear-gradient(90deg, rgba(109,0,251,1) 0%, rgba(57,185,158,1) 0%, 
     }
 
     .project-card2{
-        width: 100%;
+        width: 45%;
         margin: 10px;
-        height: 250px;
+        height: 120px;
+        min-width: 150px;
     }
     
 
     .container2{
         width: 100%;
         height: fit-content;
-        
+        align-items: center;
+    }
+
+    .title2{
+        font-size:x-small;
+        margin-top: -1px;
     }
 }
